@@ -1,0 +1,277 @@
+:root{
+
+    --text-colour: #ffff;
+    --sun-blue-colour: #00a7e1; 
+    --sun-grey-colour: #cfcfcd; 
+
+
+}
+
+body{
+
+    font-family: 'Montserrat', sans-serif,'Sedgwick Ave', cursive;
+    font-size: 16px;
+    background-image: linear-gradient(to right bottom, #19a7ce, #1798c0, #1689b1, #157aa3, #146c94);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 1s ease;
+    filter: saturate(50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+
+
+.sunny{
+
+    background-image: linear-gradient(to right bottom, #19a7ce, #1798c0, #1689b1, #157aa3, #146c94);
+    transition: background-image 1s ease;
+
+}
+
+.cloudy{
+    background-image: linear-gradient(to right bottom, #b4b4b3, #b2b1b1, #afaeae, #acacac, #a9a9a9);
+    transition: background-image 1s ease;
+}
+
+#search{
+    height: 60px;
+    width: 600px;
+    border-radius: 30px;
+    border: 0px;
+    border-color: var(--text-colour);
+    position:absolute;
+    max-width: 80%;
+    top:25%;
+    left: 36%;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-indent: 25px;
+
+}
+
+input::placeholder{
+
+    font-family: 'Montserrat', sans-serif,'Sedgwick Ave', cursive;
+    font-size: 16px;
+   
+
+}
+
+
+h1{
+    font-size: 150px;
+    font-weight: 200;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+h2{
+
+    font-size: 30px;
+    font-weight: 100;
+    padding: 0px;
+    margin:0px;
+
+}
+h3{
+
+    font-size: 40px;
+    font-weight: 300;
+    padding: 0px;
+    font-weight: bold;
+
+
+}
+
+
+
+.container{
+    
+    
+    color: var(--text-colour);
+    width:60%;
+    height: 55%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left-box{
+
+    width: 50%;
+   
+
+}
+
+img{
+
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    
+    height: 300px;
+
+
+}
+.right-box{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-box{
+    
+   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.lower-box{
+
+    padding-top: 50px;
+    font-size: 16px;
+    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.humidity{
+
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    font-size: 20px;
+
+}
+.windSpeed{
+
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0px;
+
+}
+p{
+   
+    font-size:30px;
+    font-weight: 300;
+    padding: 0px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin: 0px;
+
+}
+
+.material-symbols-outlined {
+    font-size: 50px !important;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+@media (max-width: 450px) {
+
+    body{
+
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .container{
+
+      
+        top:50%
+    }
+    
+
+    h1 {
+        font-size: 80px;
+    }
+    h3{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    html{
+
+     height: 120vh;
+    }
+
+    body{
+        
+        object-fit: cover;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+    }
+    
+    #search {
+        width: 80%;
+        font-size: 16px;
+        top: 5%;
+        left: 10%;
+    }
+
+    .container{
+        top:75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .upper-box{
+        
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: flex-end;
+    }
+    img{
+        max-width: 266px;
+        overflow: hidden;
+        overflow-clip-margin:0px ;
+
+    }
+    h1 {
+        font-size: 80px;
+    }
+    h3{
+        font-size: 20px;
+    }
+}
+
+
